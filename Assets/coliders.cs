@@ -35,9 +35,12 @@ public class movimiento : MonoBehaviour
         if (collision.gameObject.tag == "murosx")
         {
             direcciony = direcciony * -1;
+            renderizado.flipY = !renderizado.flipY;
         }
         if (collision.gameObject.tag == "murosy")
         {
+            
+            renderizado.flipX = !renderizado.flipX;
             direccionx = direccionx * -1;
         }
 
